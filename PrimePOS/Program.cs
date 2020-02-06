@@ -9,6 +9,8 @@ namespace PrimePOS
 {
     static class Program
     {
+        public static int UserID = 0;
+        public static string UserName = "Alhussiny";
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -20,7 +22,7 @@ namespace PrimePOS
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new Form1());
+            Application.Run(new Security.FrmUserGroups());
         }
     }
 }
