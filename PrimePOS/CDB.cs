@@ -297,16 +297,16 @@ namespace PrimePOS
 //            LU.AutoSearchColumnIndex = 0;
 //            //LU.ItemIndex = 0;
 //        }
-//        //public static void FillLookUpEdit(SearchLookUpEdit LU, string TableName, String Display, string Value)
-//        //{
-//        //    NewCmd();
-//        //    Cmd.CommandText = "select " + Display + " , " + Value + " from " + TableName;
-//        //    FillDT();
+        public static void FillLookUpEdit(SearchLookUpEdit LU, string TableName, String Display, string Value)
+        {
+            NewCmd();
+            Cmd.CommandText = "select " + Display + " , " + Value + " from " + TableName;
+            FillDT();
 
-//        //    LU.Properties.DataSource = DT;
-//        //    LU.Properties.DisplayMember = Display;
-//        //    LU.Properties.ValueMember = Value;
-//        //}
+            LU.Properties.DataSource = DT;
+            LU.Properties.DisplayMember = Display;
+            LU.Properties.ValueMember = Value;
+        }
 //        public static void FillLookUpEditOnCondition(LookUpEdit LU, string TableName, String Display, string Value, string Condition, string ConditionColumn)
 //        {
 //            NewCmd();
