@@ -22,7 +22,7 @@ namespace PrimePOS
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new Security.FrmUserGroups());
+            Application.Run(new Security.FrmResetPassword());
         }   
     }
 }

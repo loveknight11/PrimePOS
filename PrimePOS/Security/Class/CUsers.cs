@@ -168,11 +168,11 @@ namespace PrimePOS.Security
             Cmd.Parameters.AddWithValue("@ID", ID);
             Cmd.Parameters.AddWithValue("@OldPassword", OldPassword);
 
-            string Update;
+            int Update;
             try
             {
                 Con.Open();
-                Update = Cmd.ExecuteScalar().ToString();
+                Update = Cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
@@ -181,7 +181,7 @@ namespace PrimePOS.Security
             }
             finally { Con.Close(); }
 
-            return Update == "1";
+            return Update == 1;
         }
 
         

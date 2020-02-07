@@ -9,3 +9,4 @@ E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.exe.licenses
 E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.exe
 E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.pdb
 E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Security.FrmUsers.resources
+E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Security.FrmResetPassword.resources

@@ -80,6 +80,12 @@
     <Compile Include="Security\Forms\FrmUsers.Designer.cs">
       <DependentUpon>FrmUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Security\Forms\FrmResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\Forms\FrmResetPassword.Designer.cs">
+      <DependentUpon>FrmResetPassword.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Security\Forms\FrmUsers.resx">
       <DependentUpon>FrmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\Forms\FrmResetPassword.resx">
+      <DependentUpon>FrmResetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
