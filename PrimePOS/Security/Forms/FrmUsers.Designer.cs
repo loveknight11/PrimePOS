@@ -28,17 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUsers));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.TxtName = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.TxtUserName = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.TxtPassword = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
             this.LUGroup = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.TxtPassword = new DevExpress.XtraEditors.TextEdit();
+            this.TxtUserName = new DevExpress.XtraEditors.TextEdit();
             this.BtnClose = new DevExpress.XtraEditors.SimpleButton();
             this.BtnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.BtnSave = new DevExpress.XtraEditors.SimpleButton();
@@ -47,6 +42,9 @@
             this.BtnPrevious = new DevExpress.XtraEditors.SimpleButton();
             this.BtnNext = new DevExpress.XtraEditors.SimpleButton();
             this.BtnLast = new DevExpress.XtraEditors.SimpleButton();
+            this.TxtName = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -55,18 +53,18 @@
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem11 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem12 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LUGroup.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPassword.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtUserName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtUserName.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPassword.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LUGroup.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
@@ -75,6 +73,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -99,120 +100,6 @@
             this.layoutControl1.Size = new System.Drawing.Size(869, 418);
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
-            // 
-            // TxtName
-            // 
-            this.TxtName.Location = new System.Drawing.Point(12, 12);
-            this.TxtName.Name = "TxtName";
-            this.TxtName.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.TxtName.Properties.Appearance.Options.UseFont = true;
-            this.TxtName.Properties.Appearance.Options.UseTextOptions = true;
-            this.TxtName.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.TxtName.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.TxtName.Properties.AppearanceFocused.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.TxtName.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Blue;
-            this.TxtName.Properties.AppearanceFocused.Options.UseFont = true;
-            this.TxtName.Properties.AppearanceFocused.Options.UseForeColor = true;
-            this.TxtName.Size = new System.Drawing.Size(810, 28);
-            this.TxtName.StyleController = this.layoutControl1;
-            this.TxtName.TabIndex = 4;
-            // 
-            // layoutControlGroup1
-            // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem1,
-            this.layoutControlItem2,
-            this.layoutControlItem3,
-            this.layoutControlItem4,
-            this.layoutControlItem5,
-            this.layoutControlItem6,
-            this.layoutControlItem7,
-            this.layoutControlItem8,
-            this.layoutControlItem9,
-            this.layoutControlItem10,
-            this.layoutControlItem11,
-            this.layoutControlItem12});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(869, 418);
-            this.layoutControlGroup1.TextVisible = false;
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem1.Control = this.TxtName;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(849, 32);
-            this.layoutControlItem1.Text = "الاسم";
-            this.layoutControlItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(30, 21);
-            this.layoutControlItem1.TextToControlDistance = 5;
-            // 
-            // TxtUserName
-            // 
-            this.TxtUserName.Location = new System.Drawing.Point(12, 44);
-            this.TxtUserName.Name = "TxtUserName";
-            this.TxtUserName.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.TxtUserName.Properties.Appearance.Options.UseFont = true;
-            this.TxtUserName.Properties.Appearance.Options.UseTextOptions = true;
-            this.TxtUserName.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.TxtUserName.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.TxtUserName.Properties.AppearanceFocused.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.TxtUserName.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Blue;
-            this.TxtUserName.Properties.AppearanceFocused.Options.UseFont = true;
-            this.TxtUserName.Properties.AppearanceFocused.Options.UseForeColor = true;
-            this.TxtUserName.Size = new System.Drawing.Size(763, 28);
-            this.TxtUserName.StyleController = this.layoutControl1;
-            this.TxtUserName.TabIndex = 4;
-            // 
-            // layoutControlItem10
-            // 
-            this.layoutControlItem10.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.layoutControlItem10.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem10.Control = this.TxtUserName;
-            this.layoutControlItem10.Location = new System.Drawing.Point(0, 32);
-            this.layoutControlItem10.Name = "layoutControlItem10";
-            this.layoutControlItem10.Size = new System.Drawing.Size(849, 32);
-            this.layoutControlItem10.Text = "اسم المستخدم";
-            this.layoutControlItem10.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem10.TextSize = new System.Drawing.Size(77, 21);
-            this.layoutControlItem10.TextToControlDistance = 5;
-            // 
-            // TxtPassword
-            // 
-            this.TxtPassword.Enabled = false;
-            this.TxtPassword.Location = new System.Drawing.Point(12, 76);
-            this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.TxtPassword.Properties.Appearance.Options.UseFont = true;
-            this.TxtPassword.Properties.Appearance.Options.UseTextOptions = true;
-            this.TxtPassword.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.TxtPassword.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.TxtPassword.Properties.AppearanceFocused.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.TxtPassword.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Blue;
-            this.TxtPassword.Properties.AppearanceFocused.Options.UseFont = true;
-            this.TxtPassword.Properties.AppearanceFocused.Options.UseForeColor = true;
-            this.TxtPassword.Properties.UseSystemPasswordChar = true;
-            this.TxtPassword.Size = new System.Drawing.Size(783, 28);
-            this.TxtPassword.StyleController = this.layoutControl1;
-            this.TxtPassword.TabIndex = 4;
-            // 
-            // layoutControlItem11
-            // 
-            this.layoutControlItem11.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.layoutControlItem11.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem11.Control = this.TxtPassword;
-            this.layoutControlItem11.Location = new System.Drawing.Point(0, 64);
-            this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(849, 32);
-            this.layoutControlItem11.Text = "كلمة السر";
-            this.layoutControlItem11.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem11.TextSize = new System.Drawing.Size(57, 21);
-            this.layoutControlItem11.TextToControlDistance = 5;
             // 
             // LUGroup
             // 
@@ -245,18 +132,41 @@
             this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // layoutControlItem12
+            // TxtPassword
             // 
-            this.layoutControlItem12.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.layoutControlItem12.AppearanceItemCaption.Options.UseFont = true;
-            this.layoutControlItem12.Control = this.LUGroup;
-            this.layoutControlItem12.Location = new System.Drawing.Point(0, 96);
-            this.layoutControlItem12.Name = "layoutControlItem12";
-            this.layoutControlItem12.Size = new System.Drawing.Size(849, 32);
-            this.layoutControlItem12.Text = "المجموعة";
-            this.layoutControlItem12.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
-            this.layoutControlItem12.TextSize = new System.Drawing.Size(57, 21);
-            this.layoutControlItem12.TextToControlDistance = 5;
+            this.TxtPassword.Enabled = false;
+            this.TxtPassword.Location = new System.Drawing.Point(12, 76);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtPassword.Properties.Appearance.Options.UseFont = true;
+            this.TxtPassword.Properties.Appearance.Options.UseTextOptions = true;
+            this.TxtPassword.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.TxtPassword.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.TxtPassword.Properties.AppearanceFocused.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtPassword.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Blue;
+            this.TxtPassword.Properties.AppearanceFocused.Options.UseFont = true;
+            this.TxtPassword.Properties.AppearanceFocused.Options.UseForeColor = true;
+            this.TxtPassword.Properties.UseSystemPasswordChar = true;
+            this.TxtPassword.Size = new System.Drawing.Size(783, 28);
+            this.TxtPassword.StyleController = this.layoutControl1;
+            this.TxtPassword.TabIndex = 4;
+            // 
+            // TxtUserName
+            // 
+            this.TxtUserName.Location = new System.Drawing.Point(12, 44);
+            this.TxtUserName.Name = "TxtUserName";
+            this.TxtUserName.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtUserName.Properties.Appearance.Options.UseFont = true;
+            this.TxtUserName.Properties.Appearance.Options.UseTextOptions = true;
+            this.TxtUserName.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.TxtUserName.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.TxtUserName.Properties.AppearanceFocused.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtUserName.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Blue;
+            this.TxtUserName.Properties.AppearanceFocused.Options.UseFont = true;
+            this.TxtUserName.Properties.AppearanceFocused.Options.UseForeColor = true;
+            this.TxtUserName.Size = new System.Drawing.Size(763, 28);
+            this.TxtUserName.StyleController = this.layoutControl1;
+            this.TxtUserName.TabIndex = 4;
             // 
             // BtnClose
             // 
@@ -370,6 +280,58 @@
             this.BtnLast.Text = "الأخير";
             this.BtnLast.Click += new System.EventHandler(this.BtnLast_Click);
             // 
+            // TxtName
+            // 
+            this.TxtName.Location = new System.Drawing.Point(12, 12);
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtName.Properties.Appearance.Options.UseFont = true;
+            this.TxtName.Properties.Appearance.Options.UseTextOptions = true;
+            this.TxtName.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.TxtName.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.TxtName.Properties.AppearanceFocused.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TxtName.Properties.AppearanceFocused.ForeColor = System.Drawing.Color.Blue;
+            this.TxtName.Properties.AppearanceFocused.Options.UseFont = true;
+            this.TxtName.Properties.AppearanceFocused.Options.UseForeColor = true;
+            this.TxtName.Size = new System.Drawing.Size(810, 28);
+            this.TxtName.StyleController = this.layoutControl1;
+            this.TxtName.TabIndex = 4;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.layoutControlItem1,
+            this.layoutControlItem2,
+            this.layoutControlItem3,
+            this.layoutControlItem4,
+            this.layoutControlItem5,
+            this.layoutControlItem6,
+            this.layoutControlItem7,
+            this.layoutControlItem8,
+            this.layoutControlItem9,
+            this.layoutControlItem10,
+            this.layoutControlItem11,
+            this.layoutControlItem12});
+            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(869, 418);
+            this.layoutControlGroup1.TextVisible = false;
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.layoutControlItem1.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem1.Control = this.TxtName;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(849, 32);
+            this.layoutControlItem1.Text = "الاسم";
+            this.layoutControlItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(30, 21);
+            this.layoutControlItem1.TextToControlDistance = 5;
+            // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.BtnLast;
@@ -442,12 +404,52 @@
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
             // 
+            // layoutControlItem10
+            // 
+            this.layoutControlItem10.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.layoutControlItem10.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem10.Control = this.TxtUserName;
+            this.layoutControlItem10.Location = new System.Drawing.Point(0, 32);
+            this.layoutControlItem10.Name = "layoutControlItem10";
+            this.layoutControlItem10.Size = new System.Drawing.Size(849, 32);
+            this.layoutControlItem10.Text = "اسم المستخدم";
+            this.layoutControlItem10.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem10.TextSize = new System.Drawing.Size(77, 21);
+            this.layoutControlItem10.TextToControlDistance = 5;
+            // 
+            // layoutControlItem11
+            // 
+            this.layoutControlItem11.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.layoutControlItem11.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem11.Control = this.TxtPassword;
+            this.layoutControlItem11.Location = new System.Drawing.Point(0, 64);
+            this.layoutControlItem11.Name = "layoutControlItem11";
+            this.layoutControlItem11.Size = new System.Drawing.Size(849, 32);
+            this.layoutControlItem11.Text = "كلمة السر";
+            this.layoutControlItem11.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem11.TextSize = new System.Drawing.Size(57, 21);
+            this.layoutControlItem11.TextToControlDistance = 5;
+            // 
+            // layoutControlItem12
+            // 
+            this.layoutControlItem12.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.layoutControlItem12.AppearanceItemCaption.Options.UseFont = true;
+            this.layoutControlItem12.Control = this.LUGroup;
+            this.layoutControlItem12.Location = new System.Drawing.Point(0, 96);
+            this.layoutControlItem12.Name = "layoutControlItem12";
+            this.layoutControlItem12.Size = new System.Drawing.Size(849, 32);
+            this.layoutControlItem12.Text = "المجموعة";
+            this.layoutControlItem12.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
+            this.layoutControlItem12.TextSize = new System.Drawing.Size(57, 21);
+            this.layoutControlItem12.TextToControlDistance = 5;
+            // 
             // FrmUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(869, 418);
             this.Controls.Add(this.layoutControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmUsers";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.RightToLeftLayout = true;
@@ -455,16 +457,13 @@
             this.Load += new System.EventHandler(this.FrmUsers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LUGroup.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPassword.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtUserName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtUserName.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPassword.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LUGroup.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
@@ -473,6 +472,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem12)).EndInit();
             this.ResumeLayout(false);
 
         }

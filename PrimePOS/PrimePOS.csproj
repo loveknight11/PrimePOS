@@ -148,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CS.xml" />
+    <None Include="Resources\password-icon.png" />
+    <None Include="Resources\user-icon.png" />
+    <None Include="Resources\Group.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
