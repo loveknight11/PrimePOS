@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using PrimePOS.Security;
+using DevExpress.XtraBars;
 
 namespace PrimePOS
 {
     public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        #region Definitions
+        DataTable DTAllowedForms = new DataTable();
+        #endregion
         #region Methods
         private void SelectPage(string Name)
         {
@@ -20,6 +24,43 @@ namespace PrimePOS
                 if (Tab.Text.Equals(Name))
                 {
                     xtraTabbedMdiManager1.SelectedPage = Tab;
+                }
+            }
+        }
+        private bool SearchAllowedForms(string FormName)
+        {
+            foreach (DataRow DR in DTAllowedForms.Rows)
+            {
+                if (DR["FormName"].ToString().Equals(FormName))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        private void SetSecurity()
+        {
+            if (Program.GroupID == 0)
+            {
+                return;
+            }
+            foreach (DevExpress.XtraBars.Ribbon.RibbonPage page in ribbonControl1.Pages)
+            {
+                foreach (DevExpress.XtraBars.Ribbon.RibbonPageGroup group in page.Groups)
+                {
+                    foreach (BarItemLink link in group.ItemLinks)
+                    {
+                        //link.Item.Enabled = false;
+                        if (link.Item.Tag == null)
+                        {
+                            link.Item.Enabled = false;
+                        }
+                        else
+                        {
+                            link.Item.Enabled = SearchAllowedForms(link.Item.Tag.ToString());
+                        }
+                        
+                    }
                 }
             }
         }
@@ -71,6 +112,25 @@ namespace PrimePOS
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmUserGroupForms Frm1 = new FrmUserGroupForms();
+            if (Application.OpenForms[Frm1.Name] as Form != null)
+            {
+                SelectPage(Frm1.Text);
+                Frm1.Close();
+                return;
+            }
+            Frm1.MdiParent = this;
+            Frm1.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DTAllowedForms = CSecurity.GetAllowedForms();
+            SetSecurity();
         }
     }
 }

@@ -10,3 +10,5 @@ E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.exe
 E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.pdb
 E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Security.FrmUsers.resources
 E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Security.FrmResetPassword.resources
+E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Security.FrmUserGroupForms.resources
+E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.FrmParentcs.resources
