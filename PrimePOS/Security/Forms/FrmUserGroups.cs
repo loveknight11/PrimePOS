@@ -16,6 +16,7 @@ namespace PrimePOS.Security
         DataTable DT = new DataTable();
         int Mark = 0;
         bool IsNew = false;
+        DataTable DTSecurity = new DataTable();
         #endregion
         #region Methods
         private void LoadGroups()
@@ -93,7 +94,7 @@ namespace PrimePOS.Security
         }
         private void EnableButtons()
         {
-            BtnDelete.Enabled = true;
+            BtnDelete.Enabled = AllowDelete();
             EnableNavigation();
         }
         private void AddNew()
@@ -104,6 +105,7 @@ namespace PrimePOS.Security
                 Bind();
                 BtnNew.Text = "جديد";
                 EnableButtons();
+                BtnSave.Enabled = AllowEdit();
             }
             else
             {
@@ -111,6 +113,7 @@ namespace PrimePOS.Security
                 TxtName.Text = "";
                 BtnNew.Text = "الغاء";
                 DisableButtons();
+                BtnSave.Enabled = true;
             }
         }
         private void Save()
@@ -190,6 +193,33 @@ namespace PrimePOS.Security
                 MessageBox.Show("لا يمكن حذف المجموعة بينما تحتوى على مستخدمين");
             }
         }
+        private bool AllowSave()
+        {
+            if (DTSecurity.Rows.Count == 0)
+            {
+                return false;
+            }
+
+            return bool.Parse(DTSecurity.Rows[0]["AllowSave"].ToString());
+        }
+        private bool AllowEdit()
+        {
+            if (DTSecurity.Rows.Count == 0)
+            {
+                return false;
+            }
+
+            return bool.Parse(DTSecurity.Rows[0]["AllowEdit"].ToString());
+        }
+        private bool AllowDelete()
+        {
+            if (DTSecurity.Rows.Count == 0)
+            {
+                return false;
+            }
+
+            return bool.Parse(DTSecurity.Rows[0]["AllowDelete"].ToString());
+        }
         #endregion
         public FrmUserGroups()
         {
@@ -200,6 +230,11 @@ namespace PrimePOS.Security
         {
             LoadGroups();
             ShowFirst();
+            DTSecurity = CSecurity.GetFormSecurity(this.Name);
+            BtnNew.Enabled = AllowSave();
+            BtnSave.Enabled = AllowEdit();
+            BtnDelete.Enabled = AllowDelete();
+            
         }
 
         private void BtnLast_Click(object sender, EventArgs e)

@@ -83,7 +83,7 @@
             this.barButtonItem3.Id = 3;
             this.barButtonItem3.LargeGlyph = global::PrimePOS.Properties.Resources.Group;
             this.barButtonItem3.Name = "barButtonItem3";
-            this.barButtonItem3.Tag = "FrmUserGroup";
+            this.barButtonItem3.Tag = "FrmUserGroups";
             this.barButtonItem3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem3_ItemClick);
             // 
             // barButtonItem4
