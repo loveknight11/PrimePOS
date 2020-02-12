@@ -11,7 +11,7 @@ namespace PrimePOS
     {
         public static int UserID = 0;
         public static string UserName = "Alhussiny";
-        public static int GroupID = 0;
+        public static int GroupID = 1;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

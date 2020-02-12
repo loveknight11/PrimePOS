@@ -33,7 +33,7 @@ namespace PrimePOS.Security
         {
             NewCmd();
             Cmd.CommandText = "select * from ViewUserGroupForms where FormName = @FormName and UserGroupID = @GroupID";
-            Cmd.Parameters.AddWithValue("@FromName", FormName);
+            Cmd.Parameters.AddWithValue("@FormName", FormName);
             Cmd.Parameters.AddWithValue("@GroupID", Program.GroupID);
             FillDT();
             return DT;

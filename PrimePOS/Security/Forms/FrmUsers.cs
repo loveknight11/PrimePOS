@@ -17,6 +17,7 @@ namespace PrimePOS.Security
         DataTable DT = new DataTable();
         int Mark = 0;
         bool IsNew = false;
+        DataTable DTSecurity = new DataTable();
         #endregion
         #region Methods
         private void LoadUsers()
@@ -104,7 +105,7 @@ namespace PrimePOS.Security
         }
         private void EnableButtons()
         {
-            BtnDelete.Enabled = true;
+            BtnDelete.Enabled = AllowDelete();
             EnableNavigation();
         }
         private void AddNew()
@@ -116,6 +117,7 @@ namespace PrimePOS.Security
                 BtnNew.Text = "جديد";
                 EnableButtons();
                 TxtPassword.Enabled = false;
+                BtnSave.Enabled = AllowEdit();
             }
             else
             {
@@ -127,6 +129,7 @@ namespace PrimePOS.Security
                 BtnNew.Text = "الغاء";
                 DisableButtons();
                 TxtPassword.Enabled = true;
+                BtnSave.Enabled = true;
             }
         }
         private bool Check()
@@ -247,6 +250,33 @@ namespace PrimePOS.Security
             }
             
         }
+        private bool AllowSave()
+        {
+            if (DTSecurity.Rows.Count == 0)
+            {
+                return false;
+            }
+
+            return bool.Parse(DTSecurity.Rows[0]["AllowSave"].ToString());
+        }
+        private bool AllowEdit()
+        {
+            if (DTSecurity.Rows.Count == 0)
+            {
+                return false;
+            }
+
+            return bool.Parse(DTSecurity.Rows[0]["AllowEdit"].ToString());
+        }
+        private bool AllowDelete()
+        {
+            if (DTSecurity.Rows.Count == 0)
+            {
+                return false;
+            }
+
+            return bool.Parse(DTSecurity.Rows[0]["AllowDelete"].ToString());
+        }
         #endregion
         public FrmUsers()
         {
@@ -298,6 +328,12 @@ namespace PrimePOS.Security
             CDB.FillLookUpEdit(LUGroup, "TblUserGroups", "Name", "ID");
             LoadUsers();
             ShowFirst();
+            DTSecurity = CSecurity.GetFormSecurity(this.Name);
+            BtnNew.Enabled = AllowSave();
+            BtnSave.Enabled = AllowEdit();
+            BtnDelete.Enabled = AllowDelete();
         }
+
+
     }
 }
