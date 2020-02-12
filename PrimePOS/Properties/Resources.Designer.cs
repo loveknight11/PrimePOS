@@ -153,6 +153,16 @@ namespace PrimePOS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Security_Password_2_icon {
+            get {
+                object obj = ResourceManager.GetObject("Security-Password-2-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Skip_forward_icon {
             get {
                 object obj = ResourceManager.GetObject("Skip-forward-icon", resourceCulture);

@@ -168,6 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CS.xml" />
+    <None Include="Resources\Security-Password-2-icon.png" />
     <None Include="Resources\password-icon.png" />
     <None Include="Resources\user-icon.png" />
     <None Include="Resources\Group.png" />

@@ -90,6 +90,7 @@
             // 
             this.barButtonItem4.Caption = "صلاحيات المجموعة";
             this.barButtonItem4.Id = 4;
+            this.barButtonItem4.LargeGlyph = global::PrimePOS.Properties.Resources.Security_Password_2_icon;
             this.barButtonItem4.Name = "barButtonItem4";
             this.barButtonItem4.Tag = "FrmUserGroupForms";
             this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
