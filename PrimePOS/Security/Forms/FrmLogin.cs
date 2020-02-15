@@ -61,6 +61,7 @@ namespace PrimePOS.Security
             }
             if (Allow)
             {
+                CLog.AddLog("Login", "UserID " + Program.UserID + " log in");
                 Form1 Frm1 = new Form1();
                 //CDB.AddLog(Program.UserID,Program.CashierID, this.Name, "تسجيل دخول الى البرنامج");
                 //InstCLogin.SaveLogin(Program.UserID);

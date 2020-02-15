@@ -12,3 +12,5 @@ E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Security.FrmResetPasswor
 E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Security.FrmUserGroupForms.resources
 E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.FrmParent.resources
 E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Security.FrmLogin.resources
+E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.csprojResolveAssemblyReference.cache
+E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Settings.FrmRptHeaderFooter.resources

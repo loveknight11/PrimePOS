@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using PrimePOS.Security;
+using PrimePOS.Settings;
 using DevExpress.XtraBars;
 
 namespace PrimePOS
@@ -131,6 +132,29 @@ namespace PrimePOS
         {
             DTAllowedForms = CSecurity.GetAllowedForms();
             SetSecurity();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            CLog.AddLog("Logout", "UserID " + Program.UserID + " log out");
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            FrmRptHeaderFooter Frm1 = new FrmRptHeaderFooter();
+            if (Application.OpenForms[Frm1.Name] as Form != null)
+            {
+                SelectPage(Frm1.Text);
+                Frm1.Close();
+                return;
+            }
+            Frm1.MdiParent = this;
+            Frm1.Show();
         }
     }
 }
