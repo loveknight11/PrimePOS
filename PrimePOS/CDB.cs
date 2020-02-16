@@ -130,6 +130,14 @@ namespace PrimePOS
             DA.Fill(DT);
         }
 
+        public static DataTable GetRptSettings()
+        {
+            NewCmd();
+            Cmd.CommandText = "select * from TblReportSettings";
+            FillDT();
+            return DT;
+        }
+
 //        public static DataTable AllData(string TableName)
 //        {
 //            NewCmd();

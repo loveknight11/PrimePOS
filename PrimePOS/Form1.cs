@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using PrimePOS.Security;
 using PrimePOS.Settings;
 using DevExpress.XtraBars;
+using DevExpress.XtraReports.UI;
 
 namespace PrimePOS
 {
@@ -64,6 +65,12 @@ namespace PrimePOS
                     }
                 }
             }
+        }
+        private void TestRptParent()
+        {
+            RptParent Rpt = new RptParent();
+            CRptParent.PrepareReport(Rpt);
+            Rpt.ShowPreview();
         }
         #endregion
         public Form1()
@@ -132,6 +139,7 @@ namespace PrimePOS
         {
             DTAllowedForms = CSecurity.GetAllowedForms();
             SetSecurity();
+            //TestRptParent();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -155,6 +163,13 @@ namespace PrimePOS
             }
             Frm1.MdiParent = this;
             Frm1.Show();
+        }
+
+        private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            RptGroupForms Rpt = new RptGroupForms();
+            CRptParent.PrepareReport(Rpt);
+            Rpt.ShowPreview();
         }
     }
 }
