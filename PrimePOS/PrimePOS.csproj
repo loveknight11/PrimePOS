@@ -93,6 +93,7 @@
     <Compile Include="Security\Class\CLogin.cs" />
     <Compile Include="Security\Class\CUserGroups.cs" />
     <Compile Include="Security\Class\CUsers.cs" />
+    <Compile Include="Security\Class\CRptGroupForms.cs" />
     <Compile Include="Security\CSecurity.cs" />
     <Compile Include="Security\Forms\FrmUserGroups.cs">
       <SubType>Form</SubType>
@@ -124,10 +125,16 @@
     <Compile Include="Security\Forms\FrmLogin.designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Security\RptGroupForms.cs">
+    <Compile Include="Security\ReportForms\FrmRptGroupForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\ReportForms\FrmRptGroupForms.Designer.cs">
+      <DependentUpon>FrmRptGroupForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Reports\RptGroupForms.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Security\RptGroupForms.Designer.cs">
+    <Compile Include="Security\Reports\RptGroupForms.Designer.cs">
       <DependentUpon>RptGroupForms.cs</DependentUpon>
     </Compile>
     <Compile Include="Settings\CRptHeaderFooter.cs" />
@@ -172,6 +179,12 @@
     <EmbeddedResource Include="Security\Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Security\ReportForms\FrmRptGroupForms.resx">
+      <DependentUpon>FrmRptGroupForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\Reports\RptGroupForms.resx">
+      <DependentUpon>RptGroupForms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settings\FrmRptHeaderFooter.resx">
       <DependentUpon>FrmRptHeaderFooter.cs</DependentUpon>
     </EmbeddedResource>
@@ -215,15 +228,14 @@
   <ItemGroup>
     <Content Include="CS.xml" />
     <Content Include="Resources\LogINSmall.jpg" />
+    <None Include="Resources\Preview.png" />
     <None Include="Resources\LogINSmall1.jpg" />
     <None Include="Resources\Security-Password-2-icon.png" />
     <None Include="Resources\password-icon.png" />
     <None Include="Resources\user-icon.png" />
     <None Include="Resources\Group.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Security\Reports\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

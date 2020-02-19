@@ -167,9 +167,15 @@ namespace PrimePOS
 
         private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
         {
-            RptGroupForms Rpt = new RptGroupForms();
-            CRptParent.PrepareReport(Rpt);
-            Rpt.ShowPreview();
+            FrmRptGroupForms Frm1 = new FrmRptGroupForms();
+            if (Application.OpenForms[Frm1.Name] as Form != null)
+            {
+                SelectPage(Frm1.Text);
+                Frm1.Close();
+                return;
+            }
+            Frm1.MdiParent = this;
+            Frm1.Show();
         }
     }
 }
