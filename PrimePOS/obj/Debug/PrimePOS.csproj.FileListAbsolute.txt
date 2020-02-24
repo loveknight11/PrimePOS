@@ -16,3 +16,5 @@ E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Settings.FrmRptHeaderFoo
 E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.RptParent.resources
 E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Security.RptGroupForms.resources
 E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Security.FrmRptGroupForms.resources
+E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.csprojResolveAssemblyReference.cache
+E:\Codes\Prime POS\PrimePOS\PrimePOS\obj\Debug\PrimePOS.Items.FrmUnits.resources

@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using PrimePOS.Security;
 using PrimePOS.Settings;
+using PrimePOS.Items;
 using DevExpress.XtraBars;
 using DevExpress.XtraReports.UI;
 
@@ -137,7 +138,7 @@ namespace PrimePOS
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            DTAllowedForms = CSecurity.GetAllowedForms();
+            DTAllowedForms = Security.CSecurity.GetAllowedForms();
             SetSecurity();
             //TestRptParent();
         }
@@ -168,6 +169,19 @@ namespace PrimePOS
         private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
         {
             FrmRptGroupForms Frm1 = new FrmRptGroupForms();
+            if (Application.OpenForms[Frm1.Name] as Form != null)
+            {
+                SelectPage(Frm1.Text);
+                Frm1.Close();
+                return;
+            }
+            Frm1.MdiParent = this;
+            Frm1.Show();
+        }
+
+        private void barButtonItem7_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            FrmUnits Frm1 = new FrmUnits();
             if (Application.OpenForms[Frm1.Name] as Form != null)
             {
                 SelectPage(Frm1.Text);
